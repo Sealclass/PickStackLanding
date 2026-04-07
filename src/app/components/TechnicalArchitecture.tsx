@@ -3,7 +3,7 @@ import { Code2, Database, Shield, Cpu } from 'lucide-react';
 
 export function TechnicalArchitecture() {
   return (
-    <section className="relative py-32 px-6">
+    <section id="architecture" className="relative py-32 px-6">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <img

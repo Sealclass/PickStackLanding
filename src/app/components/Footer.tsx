@@ -41,6 +41,11 @@ export function Footer() {
                   Download
                 </a>
               </li>
+              <li>
+                <a href="#roadmap" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Roadmap
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -67,7 +72,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#github" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                <a href="https://github.com/myasnikoviv/ranking_app" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                   <Github className="w-4 h-4" />
                   GitHub Repository
                 </a>
@@ -97,7 +102,7 @@ export function Footer() {
           
           {/* Social links */}
           <div className="flex items-center gap-4">
-            <a href="#github" className="w-10 h-10 rounded-lg bg-accent hover:bg-primary/10 border border-border hover:border-primary/30 flex items-center justify-center transition-all group">
+            <a href="https://github.com/myasnikoviv/ranking_app" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-accent hover:bg-primary/10 border border-border hover:border-primary/30 flex items-center justify-center transition-all group">
               <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a href="#twitter" className="w-10 h-10 rounded-lg bg-accent hover:bg-secondary/10 border border-border hover:border-secondary/30 flex items-center justify-center transition-all group">

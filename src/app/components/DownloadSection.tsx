@@ -3,7 +3,7 @@ import { Download, Github, Code } from 'lucide-react';
 
 export function DownloadSection() {
   return (
-    <section className="relative py-32 px-6">
+    <section id="download" className="relative py-32 px-6">
       {/* Background gradient */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
@@ -45,23 +45,28 @@ export function DownloadSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <motion.button
+            <motion.a
+              href="/assets/app-release.apk"
+              download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-xl flex items-center gap-3 justify-center transition-all shadow-lg shadow-primary/25"
             >
               <Download className="w-5 h-5" />
               Download APK
-            </motion.button>
+            </motion.a>
             
-            <motion.button
+            <motion.a
+              href="https://github.com/myasnikoviv/ranking_app"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-card hover:bg-accent border border-border text-foreground rounded-xl flex items-center gap-3 justify-center transition-all"
             >
               <Github className="w-5 h-5" />
               View on GitHub
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Installation note */}

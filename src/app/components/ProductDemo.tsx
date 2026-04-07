@@ -3,7 +3,7 @@ import { Mic, Sparkles, Save } from 'lucide-react';
 
 export function ProductDemo() {
   return (
-    <section className="relative py-32 px-6">
+    <section id="demo" className="relative py-32 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,20 +30,16 @@ export function ProductDemo() {
             className="relative"
           >
             <div className="relative bg-gradient-to-br from-card to-muted rounded-3xl p-6 border border-border/50 shadow-2xl">
-              <div className="bg-background rounded-2xl overflow-hidden aspect-[9/16]">
-                <img
-                  src="https://images.unsplash.com/photo-1689443111130-6e9c7dfd8f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBSSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBhYnN0cmFjdCUyMHB1cnBsZXxlbnwxfHx8fDE3NzUyMjgzMTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="App demo video"
+              <div className="bg-background rounded-2xl overflow-hidden aspect-[9/16] relative">
+                <video
+                  src="/assets/screenshots/pickstak_screencast_optimized.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center cursor-pointer shadow-lg shadow-primary/50"
-                  >
-                    <div className="w-0 h-0 border-l-[16px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1" />
-                  </motion.div>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
               </div>
             </div>
           </motion.div>

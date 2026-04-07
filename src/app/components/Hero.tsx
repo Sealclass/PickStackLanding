@@ -20,16 +20,6 @@ export function Hero() {
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left"
           >
-            {/* Logo */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-              className="mb-8 flex justify-center lg:justify-start"
-            >
-              <Logo size="lg" />
-            </motion.div>
-
             {/* Main headline */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
@@ -48,23 +38,26 @@ export function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <motion.button
+              <motion.a
+                href="/assets/app-release.apk"
+                download
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-xl flex items-center gap-3 justify-center transition-all shadow-lg shadow-primary/25"
               >
                 <Download className="w-5 h-5" />
                 Download APK
-              </motion.button>
+              </motion.a>
 
-              <motion.button
+              <motion.a
+                href="#demo"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-card hover:bg-accent border border-border text-foreground rounded-xl flex items-center gap-3 justify-center transition-all"
               >
                 <Play className="w-5 h-5" />
                 Watch Demo
-              </motion.button>
+              </motion.a>
             </div>
 
             {/* Stats */}
@@ -116,8 +109,8 @@ export function Hero() {
               <div className="relative bg-gradient-to-br from-card to-muted rounded-[3rem] p-4 border border-border/50 shadow-2xl">
                 <div className="bg-background rounded-[2.5rem] overflow-hidden aspect-[9/19]">
                   <img
-                    src="https://images.unsplash.com/photo-1744869985867-d23cc60e3625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbW9iaWxlJTIwYXBwJTIwbW9ja3VwJTIwZGFya3xlbnwxfHx8fDE3NzUyMjgzMTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                    alt="Pickstack app interface"
+                    src="/assets/screenshots/main_screen_loaded.png"
+                    alt="PickStack app interface"
                     className="w-full h-full object-cover"
                   />
                 </div>
